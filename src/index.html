@@ -6,27 +6,11 @@
     <title>Adopt Me</title>
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- adding not-rendered will allow you to see if you app is not rendering. If it renders it will replace that text -->
     <div id="root">Not Rendered</div>
-    <script type="text/babel">
-      // your code will go here
-      // Go into you browser and inspect React and ReactDom
-      const App = () => {
-        return React.createElement(
-          "div",
-          {},
-          React.createElement("h1", {}, "Adopt Me!")
-        );
-      };
-
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById("root")
-      );
-    </script>
+    <script src="./App.js"></script>
   </body>
 </html>
