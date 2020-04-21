@@ -12,9 +12,21 @@
   <body>
     <!-- adding not-rendered will allow you to see if you app is not rendering. If it renders it will replace that text -->
     <div id="root">Not Rendered</div>
-    <script>
+    <script type="text/babel">
       // your code will go here
       // Go into you browser and inspect React and ReactDom
+      const App = () => {
+        return React.createElement(
+          "div",
+          {},
+          React.createElement("h1", {}, "Adopt Me!")
+        );
+      };
+
+      ReactDOM.render(
+        React.createElement(App),
+        document.getElementById("root")
+      );
     </script>
   </body>
 </html>
